@@ -21,7 +21,7 @@
 	5. 文字颜色
   
 # 示例
-
+'''python
 if __name__=='__main__':
 	backImg = r".\20170815112219.jpg"
 	font = r".\msyh.ttc"
@@ -34,6 +34,7 @@ if __name__=='__main__':
 		qrImg=qrImg,
 		textColor={'R':0,'G':0,'B':0})
 	print 'ok'
+'''
 # 生成海报示例
 ![Aaron Swartz](https://raw.githubusercontent.com/wuxianghou/postmaker/master/testPost.jpg)
 # API
