@@ -43,11 +43,11 @@ class postMaker(object):
 			print repr(e)
 
 if __name__=='__main__':
-	backImg = r".\testback.jpg"
-	font = r".\msyh.ttc"
+	backImg = r"20170815112219.jpg"
+	font = r"msyh.ttc"
 	pMaker = postMaker(backImg=backImg, font= font)
-	userIcon = r'.\testIcon.jpg'
-	qrImg = r'.\testQr.jpg'
+	userIcon = r'testIcon.jpg'
+	qrImg = r'qrimg.jpg'
 	pMaker.create(
 		userIcon=userIcon,
 		userName=U"小猪猪快飞",
