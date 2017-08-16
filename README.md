@@ -23,11 +23,11 @@
 # 示例
 
 if __name__=='__main__':
-	backImg = r".\testback.jpg"
+	backImg = r".\20170815112219.jpg"
 	font = r".\msyh.ttc"
 	pMaker = postMaker(backImg=backImg, font= font)
 	userIcon = r'.\testIcon.jpg'
-	qrImg = r'.\testQr.jpg'
+	qrImg = r'.\qrimg.jpg'
 	pMaker.create(
 		userIcon=userIcon,
 		userName=U"武妝妝",
@@ -48,8 +48,8 @@ http://openapi.nanchangmama.com/make_post/
 {
 'userName': '武妝妝', 
 'userAvatar': 'http://static.dryeam.com/testIcon.jpg',
-'qrImg': 'http://static.dryeam.com/testQr.jpg', 
-'backGroundImg': 'http://static.dryeam.com/testback.jpg', 
+'qrImg': 'http://static.dryeam.com/qrimg.jpg', 
+'backGroundImg': 'http://static.dryeam.com/20170815112219.jpg', 
 'textColor': {'B': 45, 'R': 123, 'G': 9}
 }
 
@@ -58,7 +58,7 @@ from PIL import Image
 from StringIO import StringIO
 import requests
 
-para = {'userName': '武妝妝', 'userAvatar': 'http://static.dryeam.com/testIcon.jpg', 'qrImg': 'http://static.dryeam.com/testQr.jpg', 'backGroundImg': 'http://static.dryeam.com/testback.jpg', 'textColor': {'B': 45, 'R': 123, 'G': 9}}
+para = {'userName': '武妝妝', 'userAvatar': 'http://static.dryeam.com/testIcon.jpg', 'qrImg': 'http://static.dryeam.com/qrimg.jpg', 'backGroundImg': 'http://static.dryeam.com/20170815112219.jpg', 'textColor': {'B': 45, 'R': 123, 'G': 9}}
 
 r = requests.post("http://openapi.nanchangmama.com/make_post/",data=json.dumps(para))
 
