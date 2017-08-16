@@ -4,7 +4,7 @@ import PIL.Image as Image
 import PIL.ImageDraw as ImageDraw
 import PIL.ImageFont as ImageFont
 
- {"backGroundImg":"http://static.dryeam.com/testback.jpg","userAvatar":"http://static.dryeam.com/testIcon.jpg","userName":"卧龙古琴","qrImg":"http://static.dryeam.com/testQr.jpg","textColor":{'R':123,'G':9,'B':45}}
+ 
 
 class postMaker(object):
 	def __init__(self, backImg, font):
