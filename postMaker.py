@@ -44,7 +44,7 @@ class postMaker(object):
 
 if __name__=='__main__':
 	backImg = r"20170815112219.jpg"
-	font = r"msyh.ttc"
+	font = r"msyhl.ttc"
 	pMaker = postMaker(backImg=backImg, font= font)
 	userIcon = r'testIcon.jpg'
 	qrImg = r'qrimg.jpg'
