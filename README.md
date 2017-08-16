@@ -23,11 +23,11 @@
 # 示例
 ```python
 if __name__=='__main__':
-	backImg = r".\20170815112219.jpg"
-	font = r".\msyh.ttc"
+	backImg = r"20170815112219.jpg"
+	font = r"msyh.ttc"
 	pMaker = postMaker(backImg=backImg, font= font)
-	userIcon = r'.\testIcon.jpg'
-	qrImg = r'.\qrimg.jpg'
+	userIcon = r'testIcon.jpg'
+	qrImg = r'qrimg.jpg'
 	pMaker.create(
 		userIcon=userIcon,
 		userName=U"武妝妝",
@@ -45,7 +45,7 @@ if __name__=='__main__':
 http://openapi.nanchangmama.com/make_post/
 
 ## 参数格式 （JSON）
-
+```json
 {
 'userName': '武妝妝', 
 'userAvatar': 'http://static.dryeam.com/testIcon.jpg',
@@ -53,11 +53,13 @@ http://openapi.nanchangmama.com/make_post/
 'backGroundImg': 'http://static.dryeam.com/20170815112219.jpg', 
 'textColor': {'B': 45, 'R': 123, 'G': 9}
 }
-
+```
 ## 调用示例
+```python
 from PIL import Image
 from StringIO import StringIO
 import requests
+import json
 
 para = {'userName': '武妝妝', 'userAvatar': 'http://static.dryeam.com/testIcon.jpg', 'qrImg': 'http://static.dryeam.com/qrimg.jpg', 'backGroundImg': 'http://static.dryeam.com/20170815112219.jpg', 'textColor': {'B': 45, 'R': 123, 'G': 9}}
 
@@ -65,7 +67,7 @@ r = requests.post("http://openapi.nanchangmama.com/make_post/",data=json.dumps(p
 
 result = Image.open(StringIO(r.content))
 result.show()
-
+```
 
 
 
