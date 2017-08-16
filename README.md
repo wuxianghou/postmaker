@@ -34,7 +34,8 @@ if __name__=='__main__':
 		qrImg=qrImg,
 		textColor={'R':0,'G':0,'B':0})
 	print 'ok'
-
+# 生成海报示例
+![Aaron Swartz](https://raw.githubusercontent.com/wuxianghou/postmaker/master/testPost.jpg)
 # API
 
 为了方便大家使用，我把这个功能部署了一个示例，大家可以在需要的时候调用，试试。
