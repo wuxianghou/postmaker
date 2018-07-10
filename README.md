@@ -41,7 +41,7 @@ if __name__=='__main__':
 
 为了方便大家使用，我把这个功能部署了一个示例，大家可以在需要的时候调用，试试。
 
-## API 地址
+## API 地址（服务器过期，没续费，调用失效）
 http://openapi.nanchangmama.com/make_post/
 
 ## 参数格式 （JSON）
